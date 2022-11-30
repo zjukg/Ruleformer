@@ -63,6 +63,29 @@ python translate.py -data=DATASET/umls -jump=3 -padding=140 -batch_size=5 -epoch
 python translate.py -data=DATASET/umls -jump=3 -padding=140 -batch_size=5 -epoch=50 -n_head=6 -d_v=64 -desc=umls-rule -ckpt=EXPS/umls-j3-mul-XX/TranslatorXX.ckpt -decode_rule
 ```
 
+## Citation
+
+If you find this code useful, please cite the following paper.
+
+```
+@inproceedings{xu-etal-2022-ruleformer,
+    title = "Ruleformer: Context-aware Rule Mining over Knowledge Graph",
+    author = "Xu, Zezhong  and
+      Ye, Peng  and
+      Chen, Hui  and
+      Zhao, Meng  and
+      Chen, Huajun  and
+      Zhang, Wen",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.225",
+    pages = "2551--2560",
+}
+```
+
 ## Acknowledgement
 
 We refer to the code of [Transformers](https://github.com/jadore801120/attention-is-all-you-need-pytorch). Thanks for their contributions.
